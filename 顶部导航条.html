@@ -1,0 +1,241 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bootstrap3.3.7学习</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="theme/yeti/bootstrap.css">
+    <style>
+      .right{
+          float: right;
+      }
+      .wb-menu-horizontal > li {
+    position: relative;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    }
+
+      .wb-menu-horizontal li a{
+          padding: 0 12px;
+      }
+      .wb-menu-horizontal .split-hr a {
+         color: #000;
+
+      }
+      #top .wb-menu-horizontal li.split-hr:before {
+    position: absolute;
+    content: '';
+    border-left: 1px solid #e3e3e3;
+    top: 6px;
+    left: -5px;
+    bottom: 5px;
+    }
+      #top{
+      background-color: #f9f9f9;
+      height: 27px;
+      font-size: 13px;
+      border-bottom: 1px solid #e5e5e5;
+      }
+      #info{
+         background-color: #4995ca;
+         color: #fff;
+         padding: 40px 0px;
+      }
+      #info a{
+          color: #fff;
+      }
+      #copyright{
+         background-color: #17384f;
+
+      }
+      #copyright p{
+        margin: 32px 0px;
+        color: #365b67
+      }
+      .wb-contact {
+         border-right: 1px solid #6fadd8;
+         padding-top: 10px;
+         padding-bottom: 10px;
+      }
+      .wb-foot-link b {
+         padding-left: 30px;
+      }
+      .wb-foot-link ul{
+         margin-top: 15px;
+         margin-left: 15px;
+       }
+      .wb-foot-link ul li {
+          line-height: 30px;
+      }
+      .wb-foot-link ul li a{
+        color: #fff;
+      }
+
+    </style>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+
+    <!-- Add your site or application content here -->
+
+    <header>
+        <nav id="top">
+           <div class="container">
+                <ul class="right wb-menu-horizontal">
+                    <li>
+                        <a href="/login" class="wb-blue-text">登录</a>
+                    </li>
+                    <li>
+                        <a href="/register" class="wb-blue-text">注册</a>
+                    </li>
+                    <li class="split-hr">
+                        <a href="/aboutus">关于我们</a>
+                    </li>
+                    <li class="split-hr">
+                        <a href="/contactus">联系客服</a>
+                    </li>
+                    <li class="split-hr">
+                        <a href="/help/center">帮助中心</a>
+                    </li>
+                </ul>
+           </div>
+        </nav>
+        <nav class="navbar navbar-default navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                     <a href="#" class="navbar-brand">首页</a>
+                </div>
+                <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">首页</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" data-hover="dropdown" data-delay="1000" data-close-others="false" aria-expanded="false">物流相关
+                                 <span class="caret"></span>
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">报税</a>
+                            </li>
+                            <li>
+                                <a href="#">清关</a>
+                             </li>
+                           <li>
+                                <a href="#">奶粉专线</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li>
+                                <a href="#">其它专线</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">公司介绍</a>
+                    </li>
+                    <li>
+                        <a href="#">联系电话</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+
+    </div>
+    <footer>
+      <div id="info">
+        <div class="container">
+          <div class="row">
+                <div class="col-xs-3">
+                    <h3>
+                        公司图片<img alt="" src="/images/logo.JPG">
+                    </h3>
+                    <p>公司介绍</p>
+                </div>
+                <div class="col-xs-3 wb-contact">
+                    <p>
+                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>公司电话</p>
+                    <p>
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>公司邮箱</p>
+                    <p>
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>公司地址</p>
+                </div>
+                <div class="col-xs-3 wb-foot-link">
+                    <b>常用链接</b>
+                    <ul class="list-unstyled">
+                        <li class="col-xs-6">
+                            <a href="/register">用户注册</a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="/aboutus">关于我们</a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="/contactus">联系我们</a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="/price-list">网上报价</a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="/help/center">常见问题</a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="/newmedia">媒体返利</a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="/privacypolicy">隐私政策</a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="/termsandconditions">服务条款</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 wb-wei">
+                    <p>
+                        <a href="http://weibo.com/2965639564/profile?topnav=1&amp;wvr=6" title="优拜物流">微博账号：优拜物流
+                            <img alt="微博账号：优拜物流" src="/images/51parcel-QRcode.png">
+                        </a>
+                    </p>
+                    <p>微信号：</p>
+                    <p>
+                        微信图片<img alt="UK51Parcel" src="/images/weixin_footer.png">
+                    </p>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">
+          <div class="container">
+            <p class="wb-midnightblue-text text-center">Copyright © 2017 51Parcel.com. All Rights Reserved. 优拜物流版权所有
+                支付图象<img src="/images/payment_icon_footer.png">
+            </p>
+          </div>
+      </div>
+    </footer>
+
+
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="/scripts/pub/bootstrap-hover-dropdown.min.js"></script>
+
+</body>
+
+</html>
